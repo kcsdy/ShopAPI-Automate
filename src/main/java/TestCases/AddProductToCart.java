@@ -50,6 +50,7 @@ public class AddProductToCart {
 		.then().log().all().assertThat().statusCode(200).extract().response().as(AddProductResponse.class);
 		
 		System.out.println(ap.getMessage());
+		System.out.println("Done");
 	}
 
 }
